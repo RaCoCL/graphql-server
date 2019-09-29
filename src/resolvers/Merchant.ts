@@ -1,12 +1,14 @@
-import { Arg, Query, Resolver, Root } from "type-graphql";
-import { merchants, MerchantData } from "../data/data";
+import { Arg, Query, Resolver } from "type-graphql";
+import { merchants, MerchantItems } from "../data/data";
 import Merchant from "../schemas/Merchant";
 
-@Resolver(of => Merchant)
+@Resolver()
 export default class {
-    @Query(returns => Merchant, { nullable: true })
-    merchantByName(@Arg("name") name: string): MerchantData | undefined {
-        return merchants.find(merchant => merchant.name === name);
+    private merchants: Merchant[] = [];
+
+    @Query(returns => [Merchant])
+    merchantByCountryId(@Arg("countryid") countryid: number) {
+        return merchants;
     }
 
 }
