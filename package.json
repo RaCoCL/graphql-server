@@ -1,0 +1,29 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://RaCoCL@github.com/RaCoCL/graphql-server.git"
+  },
+  "author": "Raul Cornejo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaCoCL/graphql-server/issues"
+  },
+  "homepage": "https://github.com/RaCoCL/graphql-server#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^0.17.5"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.8",
+    "@types/ws": "^6.0.3",
+    "typescript": "^3.6.3"
+  }
+}
