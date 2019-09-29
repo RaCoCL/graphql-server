@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "compile": "tsc",
+    "test": "jest",
+    "start": ""
   },
   "repository": {
     "type": "git",

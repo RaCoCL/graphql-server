@@ -9,12 +9,11 @@ export default class {
 
     @Query(returns => [Merchant])
     async merchantByCountryId(@Arg("countryid") countryid: number) {
-        const merchantsFromLaybuy = await axios.post(this.LAYBUY_API_ENDPOINT, {countryid});
+        const merchantsFromLaybuy = await axios.post(this.LAYBUY_API_ENDPOINT, null, {params: { countryid: countryid }});
 
         for (const merchant of merchantsFromLaybuy.data.data.merchants) {
             this.merchants.push(merchant);
         }
-
         return this.merchants;
     }
 }

@@ -1,3 +1,5 @@
 .idea
 dist
 node_modules
+schema.gql
+package-lock.json

@@ -13,7 +13,7 @@ async function bootstrap() {
         schema,
     });
 
-    server.start(() => console.log("Server running on http://localhost:4000"));
+    server.start(() => console.log("Server Started on http://localhost:4000"));
 }
 
 bootstrap();
