@@ -10,7 +10,7 @@ function start() {
   echo "Starting REACT Front End Page..."
   echo "------------------------------------------------------------------------------"
   cd ../ui-graphql-grid/
-  npm start
+  npm run start
 }
 
 start

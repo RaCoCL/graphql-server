@@ -28,3 +28,4 @@ function deploy-ui() {
 }
 
 deploy
+deploy-ui
