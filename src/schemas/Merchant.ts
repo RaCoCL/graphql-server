@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import { Field, Int, ObjectType } from "type-graphql";
 
 @ObjectType()
@@ -12,7 +13,5 @@ export default class Merchant {
     url: string;
 
     @Field()
-    imgurl300: string;
-
-
+    imageurl300: string;
 }
