@@ -1,6 +1,18 @@
-Solution to Laybuy Test
+Solution to Laybuy Assessment
 
-## What's here?
+## What is this?
+This is a solution to the Laybuy's technical assessment.
+
+## How was it made?
+It's been developed with node, typescript, grapql and type-graphql on the Back-end and React with apollo libraries in order to query Graphql Local Server.
+
+There are many features than this solution didn't take in count but they should totally be added on a more **prod-like** release:
+
+* Caching: there are thousands of results coming from the Rest API and they seem to be quite static values. Hence, querying them once and caching them on redis, memcached or even a small persistant database could be a good solution, in order to avoid such a long delays caused by requesting the values from the Rest Endpoint.
+* pagination: having so many results, another *must-have* feature is the pagination. Specially on the graphql back-end so we can reduce network traffic.
+* There areany other things to be done on the front end, however, it was not my goal to deliver or show up some more advanced as time is a constraint in my life.
+
+## What's in here?
 
 
 There are two components on this repo:
